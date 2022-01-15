@@ -69,3 +69,19 @@ nav{
         margin-left:5px;
         margin-bottom:-3px;
     }
+.brand{
+    padding: 50px 0;
+}
+.brand .brand-logo{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg,#1413140e,#47293452,#bdafb40e);
+    border-image-slice: 1;
+}
+.brand img{
+    max-width: 100px;
+}
