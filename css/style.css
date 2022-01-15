@@ -87,6 +87,9 @@ nav{
 .brand img{
     max-width: 100px;
 }
+.mobile{
+    display: none;
+}
 
 /*--- Second section style  ---*/
 .all-product{
@@ -124,7 +127,7 @@ nav{
 }
 
 /* Extra part   */
-.extra-part{
+#extra-part{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
@@ -151,13 +154,42 @@ a{
         Media Queries
  --*/
 
- @media only screen and(max-width: 688px) {
-    .head-line{
-        position: absolute;
+ @media only screen and (min-width:375px) and (max-width: 870px) {
+    .desktop{
+        display: none;
     }
-    .navigation{
-        background-color: white;
-        flex-direction: column;
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    
+    .banner{
+       flex-wrap: wrap;
+    }
+ .banner-left{
+     order: 2;
+    padding-right: 30px;
+    padding-top: 25px;
+    text-align: center;
+ }
+ .banner-right{
+     order: 1;
+     
+ }
+ .brand .brand-logo{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 30px;
+     align-items: center;
+ }
+ .all-product{
+     grid-template-columns: repeat(2,1fr);
+ }
+ #extra-part .banner-left{
+    display: none;
+}
+#extra-part .banner-right{
+    width: 300px;
+}
+ 
 }
