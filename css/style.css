@@ -1,13 +1,15 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
-</style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 *{
     padding: 0;
     margin: 0;
-}
+
 /* --- Body Styels ---  */
-body{
-    font-family: 'Poppins', sans-serif;
+
 }
 .container{
     max-width: 1200px;
@@ -84,4 +86,78 @@ nav{
 }
 .brand img{
     max-width: 100px;
+}
+
+/*--- Second section style  ---*/
+.all-product{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.all-product .single-product{
+    box-shadow: 0px 5px 42px black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.single-product img{
+    width: 100%;
+}
+.product-details{
+    font-size: 15px;
+}
+.price{
+    font-size: 20px;
+}
+.product-details{
+    list-style: none;
+    color: cornflowerblue;
+}
+.last-button{
+    margin-top: 25px;
+    text-align: right;
+}
+.see-more{
+    background-color: transparent;
+    color: rgb(39, 38, 38);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Extra part   */
+.extra-part{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.copy-write{
+    text-decoration: none;
+}
+.copy-write p a{
+    color: white;
+}
+a{
+    color: white;
+}
+
+
+/* --
+        Media Queries
+ --*/
+
+ @media only screen and(max-width: 688px) {
+    .head-line{
+        position: absolute;
+    }
+    .navigation{
+        background-color: white;
+        flex-direction: column;
+    }
+    
 }
